@@ -40,7 +40,7 @@ for num in xrange(0,howmanyrecords):
     timestamp = int(time.time()) - random.randrange(0,86400)
     if (which == 'domain' or which == 'url'):
         N = random.randrange(1,70)
-        random_string = ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(N)) +'.'+ random.choice(tlds)
+        random_string = ''.join(random.choice(string.ascii_uppercase + string.digits) for x in range(N)) +'.'+ random.choice(tlds)
         if (which == 'domain'):
             random_string = random_string.lower() #cif only likes lower case domains
             desc = "this is a domain"
